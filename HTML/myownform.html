@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="description" content="my own form">
+        <meta name="author" content="Andy">
+
+        <title>Smarter than a 5th Grader</title>
+        
+    </head>
+    <body>
+        <form>
+            <header>
+                <h1>
+                    <em>Are you Smarter than a Fifth Grader?</em>
+                </h1>
+            </header>
+
+            <main>
+                <img src="imgform/kid.jpg" alt="Kid_Home_Alone" width="400" height="300">
+                <p>
+                    This simple and short form composed of 10 questions will reveal
+                    if you are smarter or not than a Fifth Grader.
+                </p>
+                <p>
+                    Questions adress all sort of topics. From mathematics and chemistry to
+                    history.
+                </p>
+                <p>
+                    In case you missed it or need them again, here are the instructions on how to answer the questions:
+                </p>
+                <button class="button" onClick="window.open('index_myform.html');">
+                <span class="icon">Wait! Redirect me back to the instructions</span>
+                </button>
+                <p>
+                    Get ready!<br>
+
+                    Is a kid smarter than you?
+                </p>
+
+                <fieldset>
+                    <fieldset>
+                        <legend>
+                            1. On the periodic table, which element is represented by the letter <b>N</b>?
+                        </legend>
+                        <label><input type="radio" name="question_1" value="nadium">Nadium</label><br>
+                        <label><input type="radio" name="question_1" value="nitrogen">Nitrogen</label><br>
+                        <label><input type="radio" name="question_1" value="nickel">Nickel</label><br>
+                        <label><input type="radio" name="question_1" value="neon">Neon</label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            2. What gas do humans need in order to survive?
+                        </legend>
+                            <label for="question_2">Type in the full name of the gas: </label>
+                            <input type="text" name="oxygen" id="question_2" maxlength="10"><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <p>
+                            <label for="question_3">
+                                3. How many <b>nouns</b> are in the following sentence? <br>
+                                The rabbit ran to the cafeteria and ate a big salad
+                            </label>
+                        </p>
+                        <textarea name="counting_nouns" id="question_3" placeholder="Don't think about it too much ..."></textarea>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <p>
+                            <label for="question_4">
+                                4. What are the five interrogative or "questions" words?
+                            </label>
+                        </p>
+                        <textarea name="question_words" id="question_4" placeholder="Hint: they all start with a 'W'"></textarea>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            5. What is the hardest mineral?
+                        </legend>
+                        <label><input type="radio" name="question_5" value="tungsten">Tungsten</label><br>
+                        <label><input type="radio" name="question_5" value="chromium">Chromium</label><br>
+                        <label><input type="radio" name="question_5" value="diamond">Diamond</label><br>
+                        <label><input type="radio" name="question_5" value="obsidian">Obsidian</label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            6. What are the states of the matter? You can choose more than one
+                        </legend>
+                        <label><input type="checkbox" name="question_6" value="solid">Solid</label><br>
+                        <label><input type="checkbox" name="question_6" value="liquid">Liquid</label><br>
+                        <label><input type="checkbox" name="question_6" value="gas">Gas</label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            7. If you need 1/2 cup of flour and you only have a 1/4 measuring cup, 
+                            how many times do you need to use it to get the right amount of flour?
+                        </legend>
+                        <select name="question_7">
+                            <option>Five times</option>
+                            <option>Six times</option>
+                            <option>One time</option>
+                            <option>Two times</option>
+                            <option>Two and a half times</option>
+                            <option>Eight times</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            8. What are three types of rocks?
+                        </legend>
+                        <select name="question_8" size="8" multiple>
+                            <option>Rocky</option>
+                            <option>Solid</option>
+                            <option>Lavamorphic</option>
+                            <option>Oceanic</option>
+                            <option>Sedimentary</option>
+                            <option>Metamorphic</option>
+                            <option>Igneous</option>
+                            <option>Graniteous</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <img src="imgform/Perry.jpg" alt="Perry_Ornitorrinco" width="200" height="200"><br>
+                    <fieldset>
+                        
+                        <legend>
+                            9. <b>True or False</b>. The Platypus is a mammal. Also known as <em>Perry</em>.
+                        </legend>
+                        <label><input type="radio" name="question_9" value="True">True</label><br>
+                        <label><input type="radio" name="question_9" value="False">False</label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            10. How many autonomous communities are there in Spain?
+                        </legend>
+                        <select name="question_10">
+                            <option>19</option>
+                            <option>17</option>
+                            <option>15</option>
+                            <option>11</option>
+                            <option>21</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Check how smart I am!" class="submit">
+                    <input type="reset" value="Reset my answers" class="submit">
+                </p>
+            </main>
+        </form>
+        <footer>
+            <p>
+                <small>© 2023 - All rights reserved || Designed By: Andy</small>
+            </p>
+        </footer>
+    </body>
+        
+<!--
+Implementar código que en base al número de respuestas correctas te diga si estás al nivel de un niño de primaria o no
+-->
+
+</html>

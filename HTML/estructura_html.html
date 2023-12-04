@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="basic HTML5 example">
+        <meta name="author" content="Andy">
+        <title>Basic Structure of a HTML5 file</title>
+    </head>
+
+    <body>
+        <header>
+            <center>
+            <h1>
+                <img src="img/html.png" alt="HTML logo" width="10%" height="10%"><br>
+                Basic Structure of a HTML file
+            </h1>
+            </center>
+            <h2>
+                <p>
+                    In this website we will attempt to make a brief introduction to
+                    the MarkUp Language of <i>HTML</i>.
+                    We will show how to create simple tables, insert images and links
+                    and finally basic footer formatting.
+                </p>
+            </h2>
+        </header>
+        <main>
+            <h2>
+                Introduction
+            </h2>
+            <section>
+                <article>
+                    <p>
+                        <a href="https://en.wikipedia.org/wiki/HTML5" target="display">HTML5</a>
+                        
+                        is a MarkUp language used for structuring and formatting content on the World Wide Web.
+                        It is today's most used tool for web development when paired together with other languages such
+                        as CSS, JavaScript and PHP.
+                        HTML5 can be considered the <b><em>framework</em></b> of a website. Then, on top of it, more languages will start 
+                        to pile to make the web more attractive to the users. <br>
+
+                        <img src="img/html-css-js.jpg" alt="HTML5-CSS-JS" width="20%" height="20%"><br>
+                        <em><small>The 'three musketeers'</small></em><br>
+                </article>
+
+                        A HTML5 starts always the same way, as shown in the image below:<br><br>
+
+                        <img src="img/htmlstart.jpg" alt="HTML start" width="30%" height="30%"><br><br>
+
+                        That is the most <em>basic</em> start of a HTML5 file.<br>
+
+                        If you are using special characters that are common in spanish such as accents, it is mandatory to use "UTF-8" 
+                        character encoding.<br>
+
+                        If you want to add an image or a link, it would be using the following code:<br>
+
+                        <pre>
+                            <xmp>
+                                Images: <img src="location of the image" alt="mandatory alternative text">
+                                Links: <a href="link of the website">Text shown instead of the link</a>
+                            </xmp>
+                        </pre>
+                        <article>
+                            Tables in HTML have a certain number of rows and columns. There we can insert, arrange and
+                            display data. Then this is shown in the website in a tabular format. A basic example would be: <br><br>
+
+                            <table align="center">
+                                <tr>
+                                    <th>Column 1 header</th>
+                                    <th>Column 2 header</th>
+                                    <th>Column 3 header</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Row 1 Cell 1 with row size 2</td>
+                                    <td>Row 1 Cell 2</td>
+                                    <td>Row 1 Cell 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Row 2 Cell 2</td>
+                                    <td>Row 2 Cell 3</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align="center">Row 3 Cell 1 with column size 3</td>
+                                </tr>
+                            </table>
+                    </p>
+                        </article>
+            </section>
+            <h2>
+                Lists in HTML5
+            </h2>
+            <section>
+                <article>
+                <p>
+
+                    So, to sum up, in this brief document we have seen:
+
+                    <ul>
+                        <li>What is HTML.</li>
+                        <li>How to add images and links.</li>
+                        <li>An example of a table in HTML5.</li>
+                        <li>Lists.</li>
+                        <ol>
+                            <li>Unordered lists. Such as the previous list.</li>
+                            <li>Ordered lists. Such as this one.</li>
+                        </ol>
+                    </ul>
+                </article>
+                    And remember, the basic structure order of a HTML5 file is:
+                <article>
+                    <ol>
+                        <li>Doctype tag. No need to close it.</li>
+                        <li>HTML tag.</li>
+                        <li>Head and meta information.</li>
+                        <li>Title.</li>
+                            <ul>
+                                <li>If you use CSS, you would need to add the style tag in this after section</li>
+                            </ul>
+                        <li>Body.</li>
+                        <li>Header. Mandatory tag.</li>
+                        <li>Main. There is no need to specify where the main is. Although it may be helpful for very long HTML files.</li>
+                        <li>Footer. Mandatory tag like header. The information that goes here is very limited. Like contact information, location...</li> <br>
+                    </ol>
+
+                    The information above shown in an imagen and web source:<br>
+
+                    <a href="http://www.edu4java.com/en/web/html5-body-header.html" target="display"><img src="img/bodyStructureHeader.png" alt="Body Structure"></a><figcaption><i>Basic Structure</i></figcaption><br><br>
+                </article>
+                </p>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <center>
+                You can contact the author of this brief file in <a href="mailto:andy.s380666@cesurformacion.com">Andy's Contact Email</a><br>
+                Or if you prefer, you could make a phone call <a href="tel:+34666555444">Call free or SMS at +34 666-555-444</a><br>
+                In case that you want to visit us:<br>
+                Camí de Son Rapinya, 12<br>
+                Carrer de Galícia, 3<br>
+                07013 Palma<br>
+                Balearic Islands<br>
+
+                <iframe src="
+                https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.0383831339745!2d2.6211982765003774!3d39.58128530606236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297937762fdad4d%3A0xc0fb6bc651e86210!2sCesur%20Mallorca%20-%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1699261619046!5m2!1ses!2ses" 
+                width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </center>
+            </address>
+            <small>
+                <center>
+                <i>Made by Andy</i>
+                </center>
+            </small>
+        </footer>
+    </body>
+
+<!-- Dos secciones. Una sección que sirva de introducción. Explicando algunas
+cosas báscias de HTML con imágen y enlace web. Luego una segunda sección que 
+vaya de listas. Ha de contener una lista numerada y otra no numerada. Se podría
+incluir una imagen para embellecer. También un enlace web como referencia.
+Luego tendríamos el footer. La dirección del lugar. Se podría poner Cesur.
+Un correo cualquiera y un número de teléfono. -->
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lista compleja formateada</title>
+    <style>
+      body {
+        background-color: bisque;
+        margin: 0 20%;
+        font-family: "Times New Roman", Times, serif;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: normal;
+        border-bottom: 1 px solid;
+        margin-top: 3% solid #57b1dc;
+      }
+      .azul {
+        color: blue;
+      }
+      /* Popup container */
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      /* The actual popup (appears on top) */
+      .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+      }
+
+      /* Popup arrow */
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+      /* Toggle this class when clicking on the popup container (hide and show the popup) */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      <a href="https://www.elperiodico.com/es/" target="display">
+        <img
+          src="img/periodicos.png"
+          alt="Periódicos noticias"
+          width="55%"
+          height="30%"
+      /></a>
+      <figcaption>
+        <em><font size="5">Your Daily News </font></em>
+      </figcaption>
+      <br />
+      Menú
+    </h1>
+
+    <ul>
+      <br />
+      <li>Inicio</li>
+      <li><b> Noticias </b></li>
+      <ul>
+        <li>
+          <a href="https://elpais.com/ultimas-noticias/" target="display"
+            ><u> Recientes </u></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.elmundo.es/lo-mas/noticias-mas-leidas.html"
+            target="_blank"
+          >
+            <u><b> Más leídas </b></u></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.20minutos.es/noticia/73063/0/2005/noticias/valoradas/"
+            target="display"
+            ><u> Más valoradas </u></a
+          >
+        </li>
+      </ul>
+      <li>Artículos</li>
+      <ol>
+        <li class="azul"><b> XHTML </b></li>
+        <li class="azul">CSS</li>
+        <li>JavaScript</li>
+        <li>Otros</li>
+      </ol>
+      <li>Contacto</li>
+      <br />
+      <dt><em> Email </em></dt>
+      <dd><b> nombre@dirección.com </b></dd>
+      <dt><em> Teléfono</em></dt>
+      <dd>900 900 900</dd>
+      <dt><em> Fax </em></dt>
+      <dd>800 800 800</dd>
+    </ul>
+
+    <h2>Disclaimer</h2>
+
+    <div class="popup" onclick="myFunction()">
+      Click me to toggle the popup!
+      <span class="popuptext" id="myPopup">I am testing stuff</span>
+    </div>
+
+    <script>
+      // When the user clicks on div, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

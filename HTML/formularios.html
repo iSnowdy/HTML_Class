@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset = "utf-8">
+        <meta name="description" content="forms in HTML">
+        <meta name="author" content="Andy">
+
+        <title>Basics of Forms in HTML5</title>
+
+        <style>
+            p.ridge {
+                border-style: ridge;
+            }
+            body {
+                margin: 0 35%;
+                margin-top: 0.5%;
+                font-family: 'Times New Roman', Times, serif;
+                border: 1px solid grey;
+                padding: 0.2%;
+            }
+            textarea {
+                width: 300px;
+                height: 150px;
+            }
+            footer {
+                text-align: center;
+                width: 100%;
+                font-size: smaller;
+            }
+            .submit {
+                font-weight: bold;
+            }
+            ul {
+                list-style: none;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <form>
+            <header>
+                <h1>
+                    "Pimp My Shoes" Contest Entry Form
+                </h1>
+            </header>
+
+            <main>
+                    <p>
+                        Want to trade in your old sneakers for a custom pair of Forcefields?<br>
+                        Make a case for why your shoes have got to go and you may be<br>
+                        one of then lucky winners.
+                    </p>
+                        Design your custom Forcefields:
+                    <fieldset>
+                    <legend>
+                        Contest Entry Information
+                    </legend>
+                    <p>
+                        <label for="form_name">Name: </label>
+                        <input type="text" name="user_name" id="form_name" maxlength="50"><br>
+                        <label for="form_email">Email: </label>
+                        <input type="email" name="user_email" id="form_email" maxlength="30"><br>
+                        <label for="form_phone">Phone: </label>
+                        <input type="tel" name="user_phone" id="form_phone" maxlength="12"><br>
+                    </p>
+                    </fieldset>
+                    <p>
+                        <label for="description">My shoes are SO old...</label>
+                    </p>
+                        <textarea name="shoes description" id="description" placeholder="No more than 300 characters long"></textarea>
+                    <p>
+                        
+                        <h2><b>Design your custom Forcefields:</b><br></h2>
+                    </p>
+                        <fieldset>
+                        <legend>Costum shoe design</legend>
+                    <fieldset>
+                    <legend>
+                        Color (choose one):
+                    </legend>
+                    <ul>
+                        <li><label><input type="radio" name="color" value="red" >Red</label></li>
+                        <li><label><input type="radio" name="color" value="blue" >Blue</label></li>
+                        <li><label><input type="radio" name="color" value="black" >Black</label></li>
+                        <li><label><input type="radio" name="color" value="silver" >Silver</label></li>
+                    </ul> 
+                    </fieldset>
+                    <fieldset>
+                    <legend>
+                        Features (choose as many as you want):
+                    </legend>
+                    <ul>
+                        <li><label><input type="checkbox" name="features" value="laces" >Sparkley laces</label></li>
+                        <li><label><input type="checkbox" name="features" value="logo" >Metallic logo</label></li>
+                        <li><label><input type="checkbox" name="features" value="heels" >Light-up heels</label></li>
+                        <li><label><input type="checkbox" name="features" value="sound" >MP3-enabled</label></li>
+                    </ul>
+                    </fieldset>
+                    <fieldset>
+                    <legend>Size<br></legend>
+                    (Sizes reflect standard men's sizing): <input type="text" list="shoesizes" name="sizes">
+
+                        <datalist id="shoesizes">
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                            <option value="11"></option>
+                            <option value="12"></option>
+                            <option value="13"></option>
+                            <option value="14"></option>
+                            <option value="15"></option>
+                        </datalist>
+                    </fieldset>
+                    </fieldset>
+                    <p>
+                        <input type="submit" value="Pimp My Shoes!" class="submit">
+                        <input type="reset" value="Reset" class="submit">
+                    </p>
+            </main>
+        </form>
+    </body>
+
+    <footer>
+        <p>Copyright © 2023 - All rights reserved || Designed By: Andy</p>
+    </footer>
+
+</html>
