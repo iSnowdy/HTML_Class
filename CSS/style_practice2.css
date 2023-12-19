@@ -1,91 +1,76 @@
-/* start */
-
 *{
     box-sizing: border-box;
 }
 
 html{
+    scroll-snap-type: y mandatory;
     font-size: 10px;
     font-family: sans-serif;
-    scroll-snap-type: y mandatory;
 }
-
-/*
-
-.enabled{
-    margin: 0%;
-    padding: 0%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-/*
-
-/* head */
-
-
-/* body */
 
 section{
-    height: 100vh;
+    height: 100vw;
     width: 100vw;
     scroll-snap-align: start;
-}
-
-.bgissue7{
-    background: #ff608c;
-}
-
-.bgissue6{
-    background: #fff;
-}
-
-.bgissue5{
-    background: #00c1b5;
-}
-
-.bgissue4{
-    background: #ff6519;
-}
-
-.bgissue3{
-    background: #ffbe00;
-}
-
-.bgissue2{
-    background: #1d3fbb;
-}
-
-.bgissue1{
-    background: #e30512;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    transition: background-color 500ms ease-out 200ms;
-    margin: 0;
-}
-
-header{
-    padding-top: 20px;
-    position: absolute;
-    left: 15px;
-    top: 0;
-    z-index: 2;
-}
-
-.fp-section{
     position: relative;
     box-sizing: border-box;
 }
 
-.fp-section.fp-table{
-    display: table;
-    table-layout: fixed;
-    width: 100%;
+section img{
+    width: 420px;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    padding-top: 20px;
+    left: 15px;
+    top: 0;
+    position: absolute;
+}
+
+.header-img{
+    width: 260px;
+    height: auto;
+}
+
+.section7{
+    background: #ff608c;
+}
+
+.section6{
+    background: #fff;
+}
+
+.section5{
+    background: #00c1b5;
+}
+
+.section4{
+    background: #ff6519;
+}
+
+.section3{
+    background: #ffbe00;
+}
+
+.section2{
+    background: #1d3fbb;
+}
+
+.section1{
+    background: #e30512;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
 }
 
 .fp-table{
@@ -93,8 +78,6 @@ header{
     vertical-align: middle;
     width: 100%;
 }
-
-/*
 
 .middle{
     padding-top: 35px;
@@ -106,21 +89,6 @@ header{
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-*/
-
-.middle{
-    padding-top: 35px;
-}
-.middle .cover{
-    text-align: center;
-}
-.middle .cover img{
-    width: 420px;
-}
-.middle .cover p{
-    margin-top: 0px;
 }
 
 .orin{
@@ -136,10 +104,8 @@ p{
     line-height: 25px;
 }
 
-/* footer */
-
 footer{
-    position: static;
+    position: static
 }
 
 .container_fluid{
@@ -161,7 +127,6 @@ footer{
     font-size: 12px;
     font-weight: normal;
 }
-
 
 .menu{
     position: absolute;
@@ -185,12 +150,9 @@ footer{
     margin-top: 0;
 }
 
-.link2{
-    text-decoration: none;
-}
-
 a{
     color: #251d20;
 }
 
-/* cambiar el nombre del archivo a style.css */ 
+
+
