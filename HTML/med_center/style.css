@@ -1,6 +1,7 @@
 * {
-    margin:0; 
-    box-sizing:content-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -13,7 +14,7 @@ a{
 }
 
 header{
-    padding-top: 20px;
+    padding-top: 0px;
     left: 20px;
 }
 
@@ -111,6 +112,12 @@ header{
 
 /* body */
 
+body{
+    background-color: white;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
 .principal{
     text-align: center;
     font-size: 18px;
@@ -139,6 +146,9 @@ header{
 
 /* slider */
 
+.car-info{
+    display: flex;
+}
 
 .containerSlide{
     height: 50vh;
@@ -150,6 +160,8 @@ header{
     display: flex;
     justify-content: left;
     align-items: left;
+    padding: 50px;
+    padding-bottom: 0px;
 }
 
 label{
@@ -170,11 +182,11 @@ input{
 
 /* Slider */
 .Carrusels{
-    height: 300px;
-    width: 500px;
+    height: 500px;
+    width: 700px;
     position: relative;
     overflow-x: hidden;
-  }
+}
   .Carrusel{
     height: 100%;
     width: 100%;
@@ -182,7 +194,8 @@ input{
     background-size: cover;
     overflow-y: hidden;
     transition: all .5s ease;
-  }
+}
+
 /* Estado 1 */
 #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
 #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
@@ -271,7 +284,7 @@ input{
 
 /* Selectores */
 .Selectors {
-    width: 100px;
+    width: 150px;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -300,6 +313,7 @@ input{
     color: white;
     text-align: center;
     font-size: 25px;
+    padding: 10px;
 }
 
 .information a{
@@ -322,3 +336,51 @@ input{
     padding-bottom: 2px;
 }
 
+/* Staff */
+
+.container-staff{
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.team{
+    font-size: 16px;
+}
+
+.team h1{
+    font-size: 24px;
+    padding: 5px;
+}
+
+.team-img{
+    display: flex;
+    justify-content: center;
+}
+
+.bg-team{
+    background-color: grey;
+    justify-content: center;
+    display: flex;
+    height: 170px;
+    width: 600px;
+}
+
+.team-img img{
+    height: 150px;
+    width: 200px;
+}
+
+
+.team-img figure{
+    padding: 10px;
+}
+
+.team-img figcaption{
+    padding: 20px;
+}
+
+.who{
+    padding-top: 50px;
+}
