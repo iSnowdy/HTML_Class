@@ -1,0 +1,38 @@
+body {
+    background-color: #faf2e4;
+    margin: 0 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 123, 0, 0.877);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h1 img {
+    height: 400px;
+    width: 400px;
+}
+
+h2 {
+    color: #d1633c;
+    font-size: 18px;
+}
+
+.h2-format{
+    color: rgba(255, 123, 0, 0.877);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 14px;
+}
