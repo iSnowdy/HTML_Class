@@ -13,6 +13,11 @@
             </title>
 
             <link rel="stylesheet" href="style.css">
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+        
 
     </head>
 
@@ -20,7 +25,19 @@
     <body>
 
         <header>
+        
+        <!-- Top NavBar -->
+        <nav class="topnav">
+            <div class="active">
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="files/Carta-Bar-Mora.pdf" target="_blank">Carta</a></li>
+                    <li><a href="https://maps.app.goo.gl/HThvgDrSk4HNWmGf7" target="_blank">Dirección</a></li>
+                </ul>
+            </div>
+        </nav>
 
+       
 
 
         </header>
@@ -28,8 +45,18 @@
         <main>
             <article>
                 <section>
-                    <h1><img src="black-goose.jpg" alt="Black Goose Logo"><br>Black Goose Bistro</h1>
+                    <h1><img src="img/black-goose.jpg" alt="Black Goose Logo"><br>Black Goose Bistro</h1>
                     <h2 class="h2-format">Summer Menu</h2>
+
+                     <!-- Inside Navbar -->
+                    <nav class="indexnav">
+                        <ul>
+                            <li class="active"><a href="#entree">Entrée</a></li>
+                            <li><a href="#appetizers">Appetizers</a></li>
+                            <li><a href="#course">Course</a></li>
+                            <li><a href="#dessert">Dessert</a></li>
+                        </ul>
+                    </nav>
 
                     <h2>
                     The Restaurant
@@ -64,6 +91,12 @@
 
 
         </main>
+
+        <footer>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.038565319087!2d2.6237732000000005!3d39.5812812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297937762fdad4d%3A0xc0fb6bc651e86210!2sCesur%20Mallorca%20-%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1707128410870!5m2!1ses!2ses" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
 
 
 
