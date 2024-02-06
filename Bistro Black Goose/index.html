@@ -5,6 +5,7 @@
     <head>
 
             <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta name="description" content="Bistro_Black_Goose">
             <meta name="author" content="Snow">
 
@@ -28,13 +29,11 @@
         
         <!-- Top NavBar -->
         <nav class="topnav">
-            <div class="active">
-                <ul>
-                    <li><a href="index.html" target="_blank">Home</a></li>
-                    <li><a href="files/Carta-Bar-Mora.pdf" target="_blank">Carta</a></li>
-                    <li><a href="https://maps.app.goo.gl/HThvgDrSk4HNWmGf7" target="_blank">Dirección</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="index.html" target="_blank" class="active">Home</a></li>
+                <li><a href="files/Carta-Bar-Mora.pdf" target="_blank">Menu</a></li>
+                <li><a href="https://maps.app.goo.gl/HThvgDrSk4HNWmGf7" target="_blank">Address</a></li>
+            </ul>
         </nav>
 
        
@@ -48,14 +47,24 @@
                     <h1><img src="img/black-goose.jpg" alt="Black Goose Logo"><br>Black Goose Bistro</h1>
                     <h2 class="h2-format">Summer Menu</h2>
 
+                    <p>
+                        <div class="place-time">
+                            <em>Baker's Corner, Seekonk, Massachusetts</em><br>
+                            <b>Hours: Monday through Thursday:</b> 11 to 9, <b>Friday and Saturday;</b> 11 to midnight
+                        </div>
+                    </p>
+
                      <!-- Inside Navbar -->
                     <nav class="indexnav">
-                        <ul>
-                            <li class="active"><a href="#entree">Entrée</a></li>
-                            <li><a href="#appetizers">Appetizers</a></li>
-                            <li><a href="#course">Course</a></li>
-                            <li><a href="#dessert">Dessert</a></li>
-                        </ul>
+                        <div class="nav-center">
+                            <ul>
+                                <li class="active"><a href="#entree">Entrée</a></li>
+                                <li><a href="#appetizers">Appetizers</a></li>
+                                <li><a href="#main-courses">Main Courses</a></li>
+                                <li><a href="#traditional-toasts">Traditional Toasts</a></li>
+                                <li><a href="#dessert">Dessert selection</a></li>
+                            </ul>
+                        </div>
                     </nav>
 
                     <h2>
@@ -87,9 +96,116 @@
                     </p>
                 </section>
             </article>
+            <!-- Menu -->
+            <article>
+                <section>
+                    <h2 class="center" id="entree">Entrée</h2>
+                    <p><em>Embark on a culinary adventure with our new entrée creations, featuring bold flavors and inspired combinations</em></p>
+                    
+                    <p>
+                        <b>Smoked Paprika and Chorizo Pork Tenderloin with Roasted Grapes and Sherry Cream</b>
+                        <br>
+                        <div class="food-menu-text">
+                            Marinated pork tenderloin seasoned with smoked paprika, cumin, garlic, and coriander. Searred on the grill or pan-fried to medium-rare for optimal tenderness.
+                        </div>
+                        <br>
+                        <b>Pan-Seared Scallops with Creamy Tomato Risotto and Crispy Pancetta</b>
+                        <br><br>
+                        <div class="food-menu-text">
+                            Large sea scallops, pan-seared to a golden brown with a crispy crust
+                        </div>
+                    </p>
 
+                    <h2 class="center" id="appetizers">Appetizers</h2>
+                    <p><em>This season, we explore the spicy flavours of the southwest in our appetizer collection</em></p>
 
+                    <p>
+                        <b>Black bean purses</b><br>
+                        <div class="food-menu-text">
+                            Spicy black bean and a blen of mexican cheeses wrapped in sheets of phyllo and baked until golden. $3.95
+                        </div>
+                        <br>
+                        <b>Southwestern napoleons with lump crab - <em>new item!</em></b>
+                        <br><br>
+                        <div class="food-menu-text">
+                            Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. $7.95
+                        </div>
+                    </p>
 
+                    <h2 class="center" id="main-courses">Main Courses</h2>
+                    <p><em>Big, bold flavours are the nam eof the game this summer. Allow us to assist you with finding the perfect wine.</em></p>
+
+                    <p>
+                        <b>Jerk rotisserie chicken with fried plantains - <em>new item!</em></b><br>
+                        <div class="food-menu-text">
+                            Tender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sauce and served with ried plantains and fresh mango. <b>Very spicy.</b> $12.95
+                        </div>
+                        <br>
+                        <b>Shrimp sate kebabs with peanut sauce</b>
+                        <br><br>
+                        <div class="food-menu-text">
+                            Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served with spicy peanut sauce and jasmine rice. $12.95
+                        </div>
+                        <br>
+                        <b>Grilled skirt steak with mushroom fricasee</b>
+                        <br><br>
+                        <div class="food-menu-text">
+                            Flavorful skirt steak marinated in asian flavours grilleda s you like it*. Served over a blend of sauteed wild mushrooms with a side of blue cheese mashed potatoes. $16.95
+                        </div>
+                    </p>
+
+                    <h2 class="center" id="traditional-toasts">Traditional Toasts</h2>
+                    <p><em>The ultimate comfort food, our traditional toast recipes are adapted from <span class="purple-text">The Whitehouse Cookbook</span>
+                    published in 1887.</em></p>
+
+                    <p>
+                        <b>Cream toast</b><br>
+                        <div class="food-menu-text">
+                            Simple cream sauce over highest quality bread, baked daily. $3.95
+                        </div>
+                        <br>
+                        <b>Mushroom toast</b>
+                        <br><br>
+                        <div class="food-menu-text">
+                            Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. $6.95
+                        </div>
+                        <br>
+                        <b>Nun's toast</b>
+                        <br><br>
+                        <div class="food-menu-text">
+                            Onions and hard-boiled eggs in a cream sauce over buttered hot toast. $6.95
+                        </div>
+                        <br>
+                        <b>Apple toast</b>
+                        <br><br>
+                        <div class="food-menu-text">
+                            Sweet, cinnamon stewed apples over delicious buttery grilled bread. $6.95
+                        </div>
+                    </p>
+
+                    <h2 class="center" id="dessert">Dessert selection</h2>
+                    <p><em>Be sure to save room for our desserts, made daily by our own <span class="purple-text">Johnson & Wales</span> trained pastry chef.</em></p>
+
+                    <p>
+                        <b>Lemon chiffon cake - <em>new item!</em></b><br>
+                        <div class="food-menu-text">
+                            Light and citrus flavored sponge cake with buttercream frosting as light as a cloud. $2.95
+                        </div>
+                        <br>
+                        <b>Molten chocolate cake</b>
+                        <br><br>
+                        <div class="food-menu-text">
+                            Bubba's special dark chocolate with a warm, molten center. Served with or without a splash of almond liqueur. $3.95
+                        </div>
+                    </p>
+
+                    <p>
+                        <div class="asterisk">
+                            * We are required to warn you that undercooked food is a health risk.
+                        </div>
+                    </p>
+                </section>
+            </article>
         </main>
 
         <footer>
