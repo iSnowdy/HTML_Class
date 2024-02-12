@@ -3,6 +3,12 @@ body {
     margin: 0 15%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
+    
+    background-image: url("img/sakblossom.png"), url("img/sakblossom-r.png");
+    background-size: 15%, 15%;
+    background-position: left top, right top;
+    background-repeat: repeat-y, repeat-y;
+    
 }
 
 .fancy-title {
@@ -45,21 +51,23 @@ p {
     position: fixed;
     background-color: #333;
     width: 70%;
-    height: auto;
+    height: 60px;
+    display: inline;
 }
 
 .topnav a {
     color: #f2f2f2;
     text-align: center;
-    padding: 20px 20px;
     text-decoration: none;
     font-size: 17px;
 }
 
-.topnav a.active {
-    background-color: rgba(255, 123, 0, 0.877);
-    color: white;
-    width: 50px;
+.topnav li a {
+    padding: 14px 20px;
+}     
+
+.topnav li a:hover {
+    background-color: #d1633c;
 }
 
 .indexnav {
@@ -69,7 +77,6 @@ p {
 
 ul {
     list-style-type: none;
-    overflow: hidden;
     font-size: 20px;
 }
 
@@ -88,7 +95,6 @@ li {
 }
 
 .indexnav li a:hover {
-    color: white;
     color: rgb(158, 6, 64);
     font-size: 24px;
 }
@@ -132,7 +138,9 @@ a:visited {
 
 .asterisk {
     padding-top: 10px;
-    font-size: 12px;
+    font-size: x-small;
+    color: rgb(124, 19, 19);
+
 }
 
 dl {
@@ -142,8 +150,31 @@ dl {
 dt {
     font-weight: bold;
     padding-bottom: 10px;
+    color: sienna;
 }
 
 dd {
     padding-bottom: 10px;
+}
+
+.maroon {
+    color: maroon;
+}
+
+.prices {
+    color: grey;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.special-h2 {
+    /*/ todo mayus, espacio entre letras 0.5em color purple */
+    text-transform: uppercase !important; 
+    letter-spacing: 0.5em !important;
+    color: rgb(65, 6, 65) !important;
+}
+
+h2 + p { /* Elements 'p' after 'h2' will be given that style */
+    text-align: center;
+    font-style: italic;
 }
