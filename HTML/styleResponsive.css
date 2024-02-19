@@ -1,0 +1,83 @@
+body {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(223, 218, 218, 0.932);
+    padding-top: 50px;
+}
+
+.container {
+    min-height: 70vh;
+    position:relative;
+}
+
+.header-top {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    text-align: left;
+    padding: 10px 50px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.file-border {
+    border-style: dotted;
+    border-color: rgb(167, 164, 164);
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 30px 15px 30px 15px;
+    margin-top: 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.send-box {
+    border-style: hidden;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px 5px;
+    margin-top: 40px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.submit-button {
+    outline: none;
+    background-color: black;
+    color: white;
+    border: 0;
+    margin-top: 10px;
+}
+
+.bottom-label {
+    border-style: hidden;
+    background-color: rgb(178, 203, 211);
+    border-radius: 5px;
+    padding: 10px 20px 10px;
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.bottom-label img {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+}
+
+footer {
+    padding: 50px;    
+}
