@@ -8,7 +8,6 @@ body {
 
 .container {
     min-height: 70vh;
-    position:relative;
 }
 
 .header-top {
@@ -21,6 +20,11 @@ body {
     width: 100%;
     top: 0;
     margin-bottom: 10px;
+}
+
+.header-link a {
+    color: white;
+    text-decoration: none;
 }
 
 header h1 {
@@ -80,4 +84,64 @@ header h1 {
 
 footer {
     padding: 50px;    
+}
+
+@media only screen and (max-width: 700px) {
+
+    .file-border {
+        width: 30%;
+        margin-left: 32%;
+        margin-right: 25%;
+    }
+
+    .send-box {
+        width: 32.5%;
+        margin-left: 32%;
+    }
+
+    .bottom-label {
+        width: 30%;
+        margin-left: 32%;
+        margin-right: 25%;
+    } 
+}
+
+
+@media only screen and (max-width: 430px) {
+
+    .file-border {
+        width: 25%;
+        margin-left: 32%;
+        margin-right: 25%;
+        overflow-x: scroll;
+    }
+
+    .file-border input {
+        font-size: 10px;
+    }
+
+    .send-box {
+        width: 29%;
+        margin-left: 33%;
+    }
+
+    .bottom-label {
+        width: 25%;
+        margin-left: 32%;
+        margin-right: 25%;
+    } 
+
+    body {
+        font-size: 12px;
+    }
+
+    .main-title {
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 50px;
+    }
+
+    .header-top {
+        padding: 5px 25px 5px;
+    }
 }
