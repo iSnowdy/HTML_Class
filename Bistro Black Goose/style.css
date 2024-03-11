@@ -8,7 +8,6 @@ body {
     background-size: 15%, 15%;
     background-position: left top, right top;
     background-repeat: repeat-y, repeat-y;
-    
 }
 
 .fancy-title {
@@ -84,14 +83,12 @@ ul {
 li {
     display: inline;
     text-align: center;
-    
     text-decoration: none;
 }
 
 .indexnav li a {
     display: block; /* makes the whole 'li' clickeable */ 
     color: black;
-    
 }
 
 .indexnav li a:hover {
