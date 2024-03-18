@@ -262,7 +262,6 @@ section {
     position: relative;
     background-size: cover;
     background-repeat: none;
-    margin-bottom: 20px; /* Agregamos un margen inferior para separar las imágenes de los elementos de texto */
     padding-bottom: 250px;
     width: 600px; /* Ajustar para que se ensanche?? */
     height: 100%;
@@ -296,11 +295,13 @@ section {
 }
 
 /* Al hacer hover, aparece el botón */
-.items1:hover .buttonCurrency, .items2:hover .buttonCurrency, .items3:hover .buttonCurrency, .items4:hover .buttonCurrency {
+.items1:hover .buttonCurrency, .items2:hover .buttonCurrency, .items3:hover .buttonCurrency, 
+.items4:hover .buttonCurrency {
     display: inline-block;
 }
 
-.items1:hover .currencytext, .items2:hover .currencytext, .items3:hover .currencytext, .items4:hover .currencytext {
+.items1:hover .currencytext, .items2:hover .currencytext, .items3:hover .currencytext, 
+.items4:hover .currencytext {
     display: none;
 }
 
@@ -426,9 +427,8 @@ section {
     position: relative;
     background-size: cover;
     background-repeat: none;
-    margin-bottom: 20px; /* Agregamos un margen inferior para separar las imágenes de los elementos de texto */
     padding-bottom: 250px;
-    width: 320px; /* Ajustar para que se ensanche?? */
+    width: 320px; /* Ajustar para que se ensanche */
     height: 100%;
 }
 
