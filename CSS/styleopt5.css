@@ -29,7 +29,7 @@ header {
     z-index: 2; /* Por encima de otras capas. Ajustar si se añade otra capa por encima */
     width: 97%;
     margin: 20px 30px;
-    height: 100px;
+    height: 4rem;
 }
 
 .uppermonogram {
@@ -40,6 +40,7 @@ header {
     padding: 10px 50px 10px;
     text-align: left;
     display: inline;
+    float: left !important;
 }
 
 .uppermonogram img {
@@ -55,7 +56,6 @@ a:link, a:visited {
 
 header a:link {
     color: #efc2b3;
-
 }
 
 header a:visited {
@@ -91,9 +91,13 @@ header a:visited {
 
 #shop {
     font-weight: bold;
-    display: inline-block; /* Por qué no funciona? */
 }
 
+#shopimg {
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 0.8rem;
+}
 
 /* Drop Down Menus */
 
@@ -147,7 +151,7 @@ section {
 
 .coverimg {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('/HTML/imgopt5/bgimgfirstsection.jpeg');
+    url('/HTML_Class/HTML/imgopt5/bgimgfirstsection.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -226,36 +230,36 @@ section {
 
 /* Items dentro de cada cajita */
 
-.items1 {
-    background-image: url('/HTML/imgopt5/item1.1.jpeg');
+.items2 {
+    background-image: url('/HTML_Class/HTML/imgopt5/item1.1.jpeg');
 }
 
 .items1:hover {
-    background-image: url('/HTML/imgopt5/item1.2.jpeg');
+    background-image: url('/HTML_Class/HTML/imgopt5/item1.2.jpeg');
 }
 
 .items2 {
-    background-image: url('/HTML/imgopt5/item2.1.jpeg');
+    background-image: url('/HTML_Class/HTML/imgopt5/item2.1.jpeg');
 }
 
 .items2:hover {
-    background-image: url('/HTML/imgopt5/item2.2.jpeg');
+    background-image: url('/HTML_Class/HTML/imgopt5/item2.2.jpeg');
 }
 
 .items3 {
-    background-image: url('/HTML/imgopt5/item3.1.jpeg');
+    background-image: url('/HTML_Class/HTML/imgopt5/item3.1.jpeg');
 }
 
 .items3:hover {
-    background-image: url('/HTML/imgopt5/item3.2.jpeg');
+    background-image: url('/HTML_Class/HTML/imgopt5/item3.2.jpeg');
 }
 
 .items4 {
-    background-image: url('/HTML/imgopt5/item4.1.jpeg');
+    background-image: url('/HTML_Class/HTML/imgopt5/item4.1.jpeg');
 }
 
 .items4:hover {
-    background-image: url('/HTML/imgopt5/item4.2.jpeg');
+    background-image: url('/HTML_Class/HTML/imgopt5/item4.2.jpeg');
 }
 
 .items1, .items2, .items3, .items4 {
@@ -310,7 +314,7 @@ section {
 /* Third section */
 
 .coverimg2 {
-    background-image: url('/HTML/imgopt5/2ndcoverimg.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/2ndcoverimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -354,71 +358,71 @@ section {
 /* Items inside */
 
 .lastsectionitem1 {
-    background-image: url('/HTML/imgopt5/4item1.1.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item1.1.jpg');
 }
 
 .lastsectionitem1:hover {
-    background-image: url('/HTML/imgopt5/4item1.2.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item1.2.jpg');
 }
 
 .lastsectionitem2 {
-    background-image: url('/HTML/imgopt5/4item2.1.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item2.1.jpg');
 }
 
 .lastsectionitem2:hover {
-    background-image: url('/HTML/imgopt5/4item2.2.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item2.2.jpg');
 }
 
 .lastsectionitem3 {
-    background-image: url('/HTML/imgopt5/4item3.1.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item3.1.jpg');
 }
 
 .lastsectionitem3:hover {
-    background-image: url('/HTML/imgopt5/4item3.2.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item3.2.jpg');
 }
 
 .lastsectionitem4 {
-    background-image: url('/HTML/imgopt5/4item4.1.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item4.1.jpg');
 }
 
 .lastsectionitem4:hover {
-    background-image: url('/HTML/imgopt5/4item4.2.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item4.2.jpg');
 }
 
 .lastsectionitem5 {
-    background-image: url('/HTML/imgopt5/4item5.1.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item5.1.jpg');
 }
 
 .lastsectionitem5:hover {
-    background-image: url('/HTML/imgopt5/4item5.2.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item5.2.jpg');
 }
 
 .lastsectionitem6 {
-    background-image: url('/HTML/imgopt5/4item6.1.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item6.1.jpg');
 }
 
 .lastsectionitem6:hover {
-    background-image: url('/HTML/imgopt5/4item6.2.jpg');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item6.2.jpg');
 }
 
 .lastsectionitem7 {
-    background-image: url('/HTML/imgopt5/4item7jpg.JPG');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item7jpg.JPG');
 }
 
 .lastsectionitem8 {
-    background-image: url('/HTML/imgopt5/4item8jpg.JPG');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item8jpg.JPG');
 }
 
 .lastsectionitem9 {
-    background-image: url('/HTML/imgopt5/4item9jpg.JPG');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item9jpg.JPG');
 }
 
 .lastsectionitem10 {
-    background-image: url('/HTML/imgopt5/4item10.1jpg.JPG');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item10.1jpg.JPG');
 }
 
 .lastsectionitem10:hover {
-    background-image: url('/HTML/imgopt5/4item10.2jpg.JPG');
+    background-image: url('/HTML_Class/HTML/imgopt5/4item10.2jpg.JPG');
 }
 
 
@@ -437,3 +441,24 @@ section {
     background-size: cover;
     background-repeat: none;
 }
+
+/* Cookies footer */
+
+.cookiesfooter {
+    bottom: 0; /* fijado */
+    font-size: 0.8rem;
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+    background-color: #928080;
+    margin-top: 1rem;
+    height: 5rem;
+    display: ;
+    
+
+}
+
+
+
+/* Footer */

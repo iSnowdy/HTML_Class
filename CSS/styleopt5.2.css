@@ -8,9 +8,28 @@ html {
 
 /* Header and Navbar */
 
+body {
+    color: #1a2456;
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
 header {
     color: #efc2b3;
     background-color: #1a2456;
+    position: fixed; /* Fija header */
+    z-index: 2; /* Por encima de otras capas. Ajustar si se añade otra capa por encima */
+    width: 97%;
+    margin: 20px 30px;
+    height: 100px;
 }
 
 .uppermonogram {
@@ -20,6 +39,8 @@ header {
     margin-top: 0;
     padding: 10px 50px 10px;
     text-align: left;
+    display: inline;
+    float: left;
 }
 
 .uppermonogram img {
@@ -27,14 +48,18 @@ header {
     padding-right: 1rem;
 }
 
-a:link {
+a:link, a:visited {
     text-decoration: none;
+    color: inherit; /* Sin esto se quedaría el azul del texto. No hace falta especificar otro color 
+    porque es el del body el que queremos */
+}
+
+header a:link {
     color: #efc2b3;
 
 }
 
-a:visited {
-    text-decoration: none;
+header a:visited {
     color: #efc2b3;
 }
 
@@ -67,6 +92,7 @@ a:visited {
 
 #shop {
     font-weight: bold;
+    display: inline-block; /* Por qué no funciona? */
 }
 
 
@@ -89,12 +115,13 @@ li.navdropdown {
     position: absolute;
     max-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background-color: rgb(190, 185, 185);
+    background-color: white;
     font-weight: 300;
+    z-index: 999; /* Así los desplegables siempre estarán por arriba de todo el contenido */
 }
 
 .navdropcontent a {
-    color: #212529;
+    color: black !important;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -102,8 +129,8 @@ li.navdropdown {
 }
 
 .navdropcontent a:hover {
-    background-color: rgb(243, 238, 238);
-    color: #c23207
+    background-color: rgb(224, 219, 219);
+    color: #962907
 }
 
 .navdropdown:hover .navdropcontent {
@@ -112,15 +139,6 @@ li.navdropdown {
 
 /* Start of body - main */
 
-body {
-    color: #1a2456;
-    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5;
-    text-align: center;
-    margin: 0;
-}
 
 /* First section: image background */
 
@@ -129,23 +147,19 @@ section {
 }
 
 .coverimg {
-    background-image: linear-gradient(to bottom, rgb( 0 0 0 / .5), rgb(0 0 0 / .5)) 
-    ,url('/HTML/imgopt5/bgimgfirstsection.jpeg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('/HTML/imgopt5/bgimgfirstsection.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* So that the section bg is also on the header */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    text-align: center;
+    position: relative;
+    top: 0 !important;
+    z-index: -1; /* Por detrás */
 }
 
 #firstsectionh1 {
@@ -154,12 +168,13 @@ section {
 }
 
 #firstsection {
-    text-align: center;
     color: #efc2b3;
-    width: 50%;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Por encima de la imagen de fondo */
 }
 
-#sectionimg {
+#sectionimgarrow {
     height: 50px;
     align-items: center;
 }
@@ -168,12 +183,17 @@ section {
 
 .sections {
     padding-top: 3rem;
+    position: relative; /* Así esta parte no se verá afectada por z-index en otras partes */
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+    background-color: rgb(213, 218, 213);
 }
 
 .sectioncontainer {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
+    padding-left: 50px;
     padding-right: 20px;
     width: 100%;
 }
@@ -181,16 +201,240 @@ section {
 .innercontainer {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
+
+.innercontainer article {
+    margin: 1rem;
+    display: block;
+}
+
+.innercontainer > h1 {
+    text-transform: uppercase; /* Por qué no funcionaaaaaaaaa */
+}
+
+.innercontainer h1 {
+    display: inline-block;
+    position: relative;
+}
+
+/* Items dentro de cada cajita */
 
 .items1 {
     background-image: url('/HTML/imgopt5/item1.1.jpeg');
-    background-size: cover;
-    background-repeat: none;
 }
 
 .items1:hover {
     background-image: url('/HTML/imgopt5/item1.2.jpeg');
+}
+
+.items2 {
+    background-image: url('/HTML/imgopt5/item2.1.jpeg');
+}
+
+.items2:hover {
+    background-image: url('/HTML/imgopt5/item2.2.jpeg');
+}
+
+.items3 {
+    background-image: url('/HTML/imgopt5/item3.1.jpeg');
+}
+
+.items3:hover {
+    background-image: url('/HTML/imgopt5/item3.2.jpeg');
+}
+
+.items4 {
+    background-image: url('/HTML/imgopt5/item4.1.jpeg');
+}
+
+.items4:hover {
+    background-image: url('/HTML/imgopt5/item4.2.jpeg');
+}
+
+.items1, .items2, .items3, .items4 {
+    position: relative;
+    background-size: cover;
+    background-repeat: none;
+    padding-bottom: 250px;
+    width: 600px; /* Ajustar para que se ensanche?? */
+    height: 100%;
+}
+
+.items1:hover, .items2:hover, .items3:hover, .items4:hover {
+    background-size: cover;
+    background-repeat: none;
+}
+
+/* Moneda >:I */
+
+.currencytext {
+    display: inline-block;
+}
+
+.buttonCurrency {
+    display: none;
+    position: absolute;
+    padding: 0.5rem 0.5rem;
+    background-color: #111839;
+    border-color: #0e142f;
+    border-radius: 1rem;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
+.items1 .buttonCurrency, .items2 .buttonCurrency, .items3 .buttonCurrency, .items4 .buttonCurrency {
+    display: none; /* Botón oculto por defecto */
+}
+
+/* Al hacer hover, aparece el botón */
+.items1:hover .buttonCurrency, .items2:hover .buttonCurrency, .items3:hover .buttonCurrency, 
+.items4:hover .buttonCurrency {
+    display: inline-block;
+}
+
+.items1:hover .currencytext, .items2:hover .currencytext, .items3:hover .currencytext, 
+.items4:hover .currencytext {
+    display: none;
+}
+
+/* Fin items dentro de cajas */ 
+
+/* Third section */
+
+.coverimg2 {
+    background-image: url('/HTML/imgopt5/2ndcoverimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: -1; /* Por detrás */
+}
+
+.innertext {
+    position: absolute; /* Cambiamos la posición a absoluta para controlar su ubicación */
+    top: 1%; /* Ajustamos la distancia desde la parte superior */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Centrado horizontal */
+}
+
+.innertext > h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.innertext > p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Fourth Section */
+
+.section4container {
+    margin-top: 1rem;
+}
+
+.section4container h1 {
+    text-transform: uppercase;
+}
+
+/* Items inside */
+
+.lastsectionitem1 {
+    background-image: url('/HTML/imgopt5/4item1.1.jpg');
+}
+
+.lastsectionitem1:hover {
+    background-image: url('/HTML/imgopt5/4item1.2.jpg');
+}
+
+.lastsectionitem2 {
+    background-image: url('/HTML/imgopt5/4item2.1.jpg');
+}
+
+.lastsectionitem2:hover {
+    background-image: url('/HTML/imgopt5/4item2.2.jpg');
+}
+
+.lastsectionitem3 {
+    background-image: url('/HTML/imgopt5/4item3.1.jpg');
+}
+
+.lastsectionitem3:hover {
+    background-image: url('/HTML/imgopt5/4item3.2.jpg');
+}
+
+.lastsectionitem4 {
+    background-image: url('/HTML/imgopt5/4item4.1.jpg');
+}
+
+.lastsectionitem4:hover {
+    background-image: url('/HTML/imgopt5/4item4.2.jpg');
+}
+
+.lastsectionitem5 {
+    background-image: url('/HTML/imgopt5/4item5.1.jpg');
+}
+
+.lastsectionitem5:hover {
+    background-image: url('/HTML/imgopt5/4item5.2.jpg');
+}
+
+.lastsectionitem6 {
+    background-image: url('/HTML/imgopt5/4item6.1.jpg');
+}
+
+.lastsectionitem6:hover {
+    background-image: url('/HTML/imgopt5/4item6.2.jpg');
+}
+
+.lastsectionitem7 {
+    background-image: url('/HTML/imgopt5/4item7jpg.JPG');
+}
+
+.lastsectionitem8 {
+    background-image: url('/HTML/imgopt5/4item8jpg.JPG');
+}
+
+.lastsectionitem9 {
+    background-image: url('/HTML/imgopt5/4item9jpg.JPG');
+}
+
+.lastsectionitem10 {
+    background-image: url('/HTML/imgopt5/4item10.1jpg.JPG');
+}
+
+.lastsectionitem10:hover {
+    background-image: url('/HTML/imgopt5/4item10.2jpg.JPG');
+}
+
+
+.lastsectionitem1, .lastsectionitem2, .lastsectionitem3, .lastsectionitem4, .lastsectionitem5,
+.lastsectionitem6, .lastsectionitem7, .lastsectionitem8, .lastsectionitem9, .lastsectionitem10 {
+    position: relative;
+    background-size: cover;
+    background-repeat: none;
+    padding-bottom: 250px;
+    width: 320px; /* Ajustar para que se ensanche */
+    height: 100%;
+}
+
+.lastsectionitem1:hover, .lastsectionitem2:hover, .lastsectionitem3:hover, .lastsectionitem4:hover,
+.lastsectionitem5:hover, .lastsectionitem6:hover, .lastsectionitem10:hover {
     background-size: cover;
     background-repeat: none;
 }
