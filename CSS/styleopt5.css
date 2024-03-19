@@ -152,7 +152,7 @@ section {
 
 .coverimg {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('/HTML_Class/HTML/imgopt5/bgimgfirstsection.jpeg');
+    url('/HTML/imgopt5/bgimgfirstsection.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -164,11 +164,16 @@ section {
     position: relative;
     top: 0 !important;
     z-index: -1; /* Por detrás */
+    flex-direction: column; /* De esta forma quedará flex, pero en una columna como quería */
 }
 
 #firstsectionh1 {
     text-transform: uppercase;
     font-size: 2rem;
+}
+
+#firstsection p {
+    margin-top: 10px;
 }
 
 #firstsection {
@@ -180,7 +185,7 @@ section {
 
 #sectionimgarrow {
     height: 50px;
-    align-items: center;
+    margin-top: 10px;
 }
 
 /* Second section: 4 items */
@@ -215,52 +220,38 @@ section {
     height: 100%;
 }
 
-.innercontainer article {
-    margin: 1rem;
-    display: block;
-}
-
-.innercontainer > h1 {
-    text-transform: uppercase; /* Por qué no funcionaaaaaaaaa */
-}
-
-.innercontainer h1 {
-    display: inline-block;
-    position: relative;
-}
-
 /* Items dentro de cada cajita */
 
-.items2 {
-    background-image: url('/HTML_Class/HTML/imgopt5/item1.1.jpeg');
+.items1 {
+    background-image: url('/HTML/imgopt5/item1.1.jpeg');
 }
 
 .items1:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/item1.2.jpeg');
+    background-image: url('/HTML/imgopt5/item1.2.jpeg');
 }
 
 .items2 {
-    background-image: url('/HTML_Class/HTML/imgopt5/item2.1.jpeg');
+    background-image: url('/HTML/imgopt5/item2.1.jpeg');
 }
 
 .items2:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/item2.2.jpeg');
+    background-image: url('/HTML/imgopt5/item2.2.jpeg');
 }
 
 .items3 {
-    background-image: url('/HTML_Class/HTML/imgopt5/item3.1.jpeg');
+    background-image: url('/HTML/imgopt5/item3.1.jpeg');
 }
 
 .items3:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/item3.2.jpeg');
+    background-image: url('/HTML/imgopt5/item3.2.jpeg');
 }
 
 .items4 {
-    background-image: url('/HTML_Class/HTML/imgopt5/item4.1.jpeg');
+    background-image: url('/HTML/imgopt5/item4.1.jpeg');
 }
 
 .items4:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/item4.2.jpeg');
+    background-image: url('/HTML/imgopt5/item4.2.jpeg');
 }
 
 .items1, .items2, .items3, .items4 {
@@ -269,7 +260,8 @@ section {
     background-repeat: none;
     padding-bottom: 250px;
     width: 600px; /* Ajustar para que se ensanche?? */
-    height: 100%;
+    height: 40vh;
+    margin: 1rem;
 }
 
 .items1:hover, .items2:hover, .items3:hover, .items4:hover {
@@ -277,22 +269,60 @@ section {
     background-repeat: none;
 }
 
-/* Moneda >:I */
+/* Moneda + Contenido de cada item */
+
+.innercontainer article {
+    margin: 1rem;
+}
+
+.content {
+    text-align: left;
+    padding: 0px;
+    position: relative;
+    margin: 1rem;
+}
+
+.content p {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.content h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .currencytext {
-    display: inline-block;
+    text-align: right !important;
 }
 
 .buttonCurrency {
     display: none;
-    position: absolute;
     padding: 0.5rem 0.5rem;
     background-color: #111839;
     border-color: #0e142f;
     border-radius: 1rem;
     color: #fff !important;
     text-decoration: none;
+    margin-left: 23rem;
 }
+
+.header:hover .currencytext,
+.items1:hover .currencytext {
+    visibility: hidden;
+}
+
+.header:hover .buttonCurrency,
+.items1:hover .buttonCurrency {
+    display: inline-block;
+}
+
 
 
 .items1 .buttonCurrency, .items2 .buttonCurrency, .items3 .buttonCurrency, .items4 .buttonCurrency {
@@ -315,7 +345,7 @@ section {
 /* Third section */
 
 .coverimg2 {
-    background-image: url('/HTML_Class/HTML/imgopt5/2ndcoverimg.jpg');
+    background-image: url('/HTML/imgopt5/2ndcoverimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -359,71 +389,71 @@ section {
 /* Items inside */
 
 .lastsectionitem1 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item1.1.jpg');
+    background-image: url('/HTML/imgopt5/4item1.1.jpg');
 }
 
 .lastsectionitem1:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item1.2.jpg');
+    background-image: url('/HTML/imgopt5/4item1.2.jpg');
 }
 
 .lastsectionitem2 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item2.1.jpg');
+    background-image: url('/HTML/imgopt5/4item2.1.jpg');
 }
 
 .lastsectionitem2:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item2.2.jpg');
+    background-image: url('/HTML/imgopt5/4item2.2.jpg');
 }
 
 .lastsectionitem3 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item3.1.jpg');
+    background-image: url('/HTML/imgopt5/4item3.1.jpg');
 }
 
 .lastsectionitem3:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item3.2.jpg');
+    background-image: url('/HTML/imgopt5/4item3.2.jpg');
 }
 
 .lastsectionitem4 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item4.1.jpg');
+    background-image: url('/HTML/imgopt5/4item4.1.jpg');
 }
 
 .lastsectionitem4:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item4.2.jpg');
+    background-image: url('/HTML/imgopt5/4item4.2.jpg');
 }
 
 .lastsectionitem5 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item5.1.jpg');
+    background-image: url('/HTML/imgopt5/4item5.1.jpg');
 }
 
 .lastsectionitem5:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item5.2.jpg');
+    background-image: url('/HTML/imgopt5/4item5.2.jpg');
 }
 
 .lastsectionitem6 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item6.1.jpg');
+    background-image: url('/HTML/imgopt5/4item6.1.jpg');
 }
 
 .lastsectionitem6:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item6.2.jpg');
+    background-image: url('/HTML/imgopt5/4item6.2.jpg');
 }
 
 .lastsectionitem7 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item7jpg.JPG');
+    background-image: url('/HTML/imgopt5/4item7jpg.JPG');
 }
 
 .lastsectionitem8 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item8jpg.JPG');
+    background-image: url('/HTML/imgopt5/4item8jpg.JPG');
 }
 
 .lastsectionitem9 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item9jpg.JPG');
+    background-image: url('/HTML/imgopt5/4item9jpg.JPG');
 }
 
 .lastsectionitem10 {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item10.1jpg.JPG');
+    background-image: url('/HTML/imgopt5/4item10.1jpg.JPG');
 }
 
 .lastsectionitem10:hover {
-    background-image: url('/HTML_Class/HTML/imgopt5/4item10.2jpg.JPG');
+    background-image: url('/HTML/imgopt5/4item10.2jpg.JPG');
 }
 
 
