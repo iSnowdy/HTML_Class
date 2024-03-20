@@ -32,6 +32,10 @@ header {
     height: 4rem;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .uppermonogram {
     font-size: 1rem;
     text-transform: uppercase;
@@ -73,7 +77,6 @@ header a:visited {
 }
 
 .navbartop ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -310,7 +313,8 @@ section {
     border-radius: 1rem;
     color: #fff !important;
     text-decoration: none;
-    margin-left: 23rem;
+    right: 0;
+    position: absolute;
 }
 
 .header:hover .currencytext {
@@ -341,8 +345,8 @@ section {
 }
 
 .innertext {
-    position: absolute; /* Cambiamos la posición a absoluta para controlar su ubicación */
-    top: 1%; /* Ajustamos la distancia desde la parte superior */
+    position: absolute; /* Absoluta para controlar su ubicación */
+    top: 1%;
     left: 50%; /* Centrado horizontal */
     transform: translateX(-50%); /* Centrado horizontal */
 }
@@ -359,13 +363,6 @@ section {
 
 /* Fourth Section */
 
-.section4container {
-    margin-top: 1rem;
-}
-
-.section4container h1 {
-    text-transform: uppercase;
-}
 
 /* Items inside */
 
@@ -444,8 +441,9 @@ section {
     background-size: cover;
     background-repeat: none;
     padding-bottom: 250px;
-    width: 320px; /* Ajustar para que se ensanche */
-    height: 100%;
+    width: 320px; /* Ajustar para que se ensanche?? */
+    height: 30vh;
+    margin: 1rem;
 }
 
 .lastsectionitem1:hover, .lastsectionitem2:hover, .lastsectionitem3:hover, .lastsectionitem4:hover,
@@ -453,6 +451,14 @@ section {
     background-size: cover;
     background-repeat: none;
 }
+
+/*
+ h1[class^="lastsectionitem"] {
+    padding-right: 200px;
+}
+
+No funciona. Por qué?
+*/
 
 /* Cookies footer */
 
@@ -501,7 +507,104 @@ section {
 }
 
 .cookiesfooter:target {
-    display: none;
+    display: none; /* De esta forma al hacer click en "I understand" desaparece el banner */
 }
 
 /* Footer */
+
+.realfooter {
+    font-size: .9rem;
+    margin-top: auto;
+    overflow: hidden;
+    z-index: 1;
+    color: #efc2b3 !important;
+    background-color: #1a2456;
+}
+
+.footerend {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.innerfootertext {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    min-width: 6em;
+    font-size: .8rem;
+}
+
+.column {
+    padding-bottom: 2rem;
+}
+
+.formfooter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.emaillabel {
+    padding-left: 5px;
+    padding-right: 0px;
+    margin-bottom: 1rem;
+    /*
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    */
+}
+
+.emailinput {
+    font-size: .9rem;
+    border-color: #efc2b3;
+    padding: .25rem .5rem;
+}
+
+.uppersubmit {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.submitbutton {
+    background-color: #efc2b3;
+    border-color: #efc2b3;
+    color: #212529;
+    opacity: .65;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 50rem; /* Bien redondita */
+    margin-left: .5rem;
+    border: 1px solid;
+    font-size: .75rem;
+    font-weight: 600;
+    padding: .375rem 1.75rem;
+    text-align: center;
+}
+
+.socials {
+    margin-right: .25rem;
+    display: inline-block;   
+    background-color: #efc2b3;
+    border-radius: 50%;
+    display: inline-flex;
+    height: 2em;
+    padding: .5em;
+    text-align: center;
+    width: 2em;
+}
+
+.socialsformat {
+    align-items: center;
+}
+
+.socialsformat img {
+    width: 50px;
+    height: 50px;
+}
+
+.copyright {
+    display: block;
+}
