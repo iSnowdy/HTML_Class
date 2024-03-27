@@ -27,13 +27,14 @@ ul {
 
 li {
     float: left;
-}
+}   
 
 li a {
     display: block;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
+    color: inherit;
 }
 
 /* First navbar */
@@ -43,16 +44,24 @@ li a {
 }
 
 .innerupperheader {
+    position: relative;
     display: inline-block;
+    font-weight: 500;
 }
 
 .upperheader img {
-    margin-top: 1rem;
     margin-left: 1rem;
 }
 
-#livefree, #login {
+#livefree {
     float: right !important;
+    color: blue;
+    font-size: 1.25rem;
+}
+
+#login {
+    float: right !important;
+    font-size: 0.8rem;
 }
 
 /* Second navbar */
