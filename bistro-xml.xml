@@ -1,0 +1,72 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+
+<blackbistro_goose_menu date="2024-04-09">
+
+<entree id="1">
+    
+    <!-- Comentario en XML -->
+    
+    <name>Smoked Paprika &amp; Chorizo Pork Tenderloin with Roasted Grapes &amp; Sherry Cream</name>
+    <description>
+        Marinated pork tenderloin seasoned with smoked paprika, cumin, garlic, &amp; cori&amp;er. 
+        Searred on the grill or pan-fried to medium-rare for optimal tenderness.
+        <garrison>
+            Fried potatoes / Baked potatoes / Salad
+        </garrison>
+        <recommended suggestion="yes">
+            We recommend this 
+        </recommended>
+    </description>
+    <price>$8.5</price>
+    <calories></calories>
+
+</entree>
+
+<appetizers id="2">
+
+    <name type="new_item">Southwestern napoleons with lump crab &gt; new item!</name>
+    <description>
+        Layers of light lump crab meat, bean &amp; corn salsa, &amp; our h&amp;made flour tortillas.
+        <garrison>
+            Fried potatoes / Baked potatoes / Salad
+        </garrison>
+        <recommended suggestion="yes">
+            We recommend this dish
+        </recommended>
+    </description>
+    <price>$7.95</price>
+    <calories></calories>
+
+</appetizers>
+
+<main_courses id="3">
+
+    <name type="new_item">Jerk rotisserie chicken with fried plantains &gt; new item!</name>
+    <description>
+        Tender chicken slow-roasted on the rotisserie, flavored with spicy &amp; fragrant jerk sauce &amp; 
+        served with ried plantains &amp; fresh mango. Very spicy.
+        <garrison>
+            Fried potatoes / Baked potatoes / Salad
+        </garrison>
+        <recommended suggestion="yes">
+            We recommend this dish
+        </recommended>
+    </description>
+    <price>$12.95</price>
+    <calories></calories>
+
+    <name>Shrimp sate kebabs with peanut sauce</name>
+    <description>
+        Skewers of shrimp marinated in lemongrass, garlic, &amp; fish sauce then grilled to perfection. 
+        Served with spicy peanut sauce &amp; jasmine rice.
+        <garrison>
+            Fried potatoes / Baked potatoes / Salad
+        </garrison>
+        <recommended suggestion="empty"></recommended>
+    </description>
+    <price>$12.95</price>
+    <calories></calories>
+
+</main_courses>
+
+</blackbistro_goose_menu>
