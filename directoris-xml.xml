@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<directori>
+    <entrades>
+        <cognom>
+            LaParra
+        </cognom>
+        <nom>
+            Juan
+        </nom>
+        <data_de_naixement>
+            10/02/1995
+        </data_de_naixement>
+        <direccion>
+            Sa Porrasa 3, Calvià
+        </direccion>
+    </entrades>
+
+    <entrades>
+        <cognom>
+            Kino
+        </cognom>
+        <nom>
+            Lazaro
+        </nom>
+        <data_de_naixement>
+            26/06/1997
+        </data_de_naixement>
+        <direccion>
+            La Venida 12, Palma
+        </direccion>
+    </entrades>
+
+    <entrades>
+        <cognom>
+            Parse
+        </cognom>
+        <nom>
+            Java
+        </nom>
+        <data_de_naixement>
+            12/12/2001
+        </data_de_naixement>
+        <direccion>
+            La Rambla, Palma
+        </direccion>
+    </entrades>
+</directori>

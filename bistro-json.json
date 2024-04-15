@@ -1,0 +1,36 @@
+{
+    "blackbistro_goose_menu": [
+        {
+            "entree": {
+                "name": "Smoked Paprika & Chorizo Pork Tenderloin with Roasted Grapes & Sherry Cream",
+                "description": {
+                    "#text": "Marinated pork tenderloin seasoned with smoked paprika, cumin, garlic, & coriander. Searred on the grill or pan-fried to medium-rare for optimal tenderness.",
+                    "garrison": "Fried potatoes / Baked potatoes / Salad",
+                    "recommended": "We recommend this"
+                },
+                "price": "$8.5",
+                "calories": ""
+            },
+            "appetizers": {
+                "name": "Southwestern napoleons with lump crab > new item!",
+                "description": {
+                    "#text": "Layers of light lump crab meat, bean & corn salsa, & our homemade flour tortillas.",
+                    "garrison": "Fried potatoes / Baked potatoes / Salad",
+                    "recommended": "We recommend this dish"
+                },
+                "price": "$7.95",
+                "calories": ""
+            },
+            "main_courses": {
+                "name": "Jerk rotisserie chicken with fried plantains > new item!",
+                "description": {
+                    "#text": "Skewers of shrimp marinated in lemongrass, garlic, & fish sauce then grilled to perfection. Served with spicy peanut sauce & jasmine rice.",
+                    "garrison": "Fried potatoes / Baked potatoes / Salad",
+                    "recommended": ""
+                },
+                "price": "$12.95",
+                "calories": ""
+            }
+        }
+    ]
+}
